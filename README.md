@@ -1,4 +1,4 @@
-# prolog
+# Prolog
 Exercícios e respostas em Prolog.
 
 Colocar arquivo __nome-definido-pela-professora.pl__ na pasta T3-SeuNome, dentro do repositório ```prolog``` 
@@ -11,7 +11,7 @@ Coloque em seu arquivo __.pl__ todas as suas definições de fatos, regras  e ou
 
 ## Exemplo de formato para o resultado do exercício
 
-### fatos e regras (arquivo .pl)
+### Fatos e regras (arquivo .pl)
 
 ``` 
 % fatos
@@ -24,7 +24,7 @@ distancia (X,Y) :- velocidade(X,Veloc),
                    tempo(X,Temp),
                    Y is Veloc*Temp.
 ```
-### consultas (arquivo .md)
+### Consultas (arquivo .md)
 
 ``` 
 ?- distancia (fiat, D).
