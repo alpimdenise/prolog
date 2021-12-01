@@ -1,5 +1,4 @@
 eu(gil).
-
 homem(gil).
 homem(gilmar).
 homem(pedro).
@@ -14,9 +13,9 @@ mulher(mariagadelha).
 mulher(nara).
 mulher(marilia).
 mulher(claudinamoreira).
-mulher(floragil)
-mulher(belina)
-mulher(sandragadelha)
+mulher(floragil).
+mulher(belina).
+mulher(sandragadelha).
 
 mae(gil,claudinamoreira).
 mae(gilmar,claudinamoreira).
