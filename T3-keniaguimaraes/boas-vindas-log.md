@@ -4,7 +4,7 @@
   ```
     ?- boasvindas(X, Y).
     X = caetanoveloso,  
-    Y = ClaudionorVianaTelesVeloso . 
+    Y = claudionorvianatelesveloso . 
 
     //Caetano e  Claudionor
   ```
@@ -49,7 +49,7 @@
 - Quem é o mae de Cetano Veloso?
     ```
     ?- progenitor(X, caetanocaveloso).
-    X = ClaudionorVianaTelesVeloso.  
+    X = claudionorvianatelesveloso.  
     ```
 
 - O que a vida tem?
