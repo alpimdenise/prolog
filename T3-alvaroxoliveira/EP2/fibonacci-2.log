@@ -1,0 +1,76 @@
+alvaro@DESKTOP-1C54QC9:/mnt/c/prolog/T3-alvaroxoliveira/EP2$ swipl fibonacci.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- trace
+|    .
+true.
+
+[trace]  ?- fibonacci(1, X).
+   Call: (10) fibonacci(1, _21988) ? creep
+   Exit: (10) fibonacci(1, 1) ? creep
+X = 1 ;
+   Redo: (10) fibonacci(1, _21988) ? creep
+   Call: (11) 1>2 ? Unknown option (h for help)
+   Call: (11) 1>2 ? creep
+   Fail: (11) 1>2 ? creep
+   Fail: (10) fibonacci(1, _21988) ? creep
+false.
+
+[trace]  ?- fibonacci(0, X).
+   Call: (10) fibonacci(0, _10990) ? creep
+   Exit: (10) fibonacci(0, 0) ? creep
+X = 0 ;
+   Redo: (10) fibonacci(0, _10990) ? creep
+   Call: (11) 0>2 ? creep
+   Fail: (11) 0>2 ? creep
+   Fail: (10) fibonacci(0, _10990) ? creep
+false.
+
+[trace]  ?- fibonacci(2, X).
+   Call: (10) fibonacci(2, _18680) ? creep
+   Exit: (10) fibonacci(2, 1) ? creep
+X = 1 ;
+   Redo: (10) fibonacci(2, _18680) ? creep
+   Call: (11) 2>2 ? creep
+   Fail: (11) 2>2 ? creep
+   Fail: (10) fibonacci(2, _18680) ? creep
+false.
+
+alvaro@DESKTOP-1C54QC9:/mnt/c/prolog/T3-alvaroxoliveira/EP2$ swipl fibonacci-2.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.1)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- fibonacci(0, X).
+X = 0.
+
+?- trace.
+true.
+
+[trace]  ?- fibonacci(0, X).
+   Call: (10) fibonacci(0, _12456) ? creep
+   Exit: (10) fibonacci(0, 0) ? creep
+X = 0.
+
+[trace]  ?- fibonacci(0, X).
+   Call: (10) fibonacci(0, _15980) ? creep
+   Exit: (10) fibonacci(0, 0) ? creep
+X = 0.
+
+[trace]  ?- fibonacci(1, X).
+   Call: (10) fibonacci(1, _19500) ? creep
+   Exit: (10) fibonacci(1, 1) ? creep
+X = 1.
+
+[trace]  ?- fibonacci(2, X).
+   Call: (10) fibonacci(2, _23028) ? creep
+   Exit: (10) fibonacci(2, 1) ? creep
+X = 1.
