@@ -1,0 +1,17 @@
+?- fatorial(3, F).
+F = 6 .
+
+?- fatorial(4, F).
+F = 24 .
+
+?- fatorial(10, F).
+F = 3628800 .
+
+?- fatorial(6, F).
+F = 720 .
+
+?- fatorial(8, F).
+F = 40320 .
+
+?- fatorial(16, F).
+F = 20922789888000 .
