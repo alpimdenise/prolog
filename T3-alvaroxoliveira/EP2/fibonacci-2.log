@@ -74,3 +74,91 @@ X = 1.
    Call: (10) fibonacci(2, _23028) ? creep
    Exit: (10) fibonacci(2, 1) ? creep
 X = 1.
+
+[trace]  ?- fibonacci(1, X).
+   Call: (10) fibonacci(1, _13050) ? creep
+   Exit: (10) fibonacci(1, 1) ? creep
+X = 1 ;
+   Redo: (10) fibonacci(1, _13050) ? creep
+   Call: (11) 1>2 ? creep
+   Fail: (11) 1>2 ? creep
+   Fail: (10) fibonacci(1, _13050) ? creep
+false.
+
+[trace]  ?- fibonacci(5, X).
+   Call: (10) fibonacci(5, _20740) ? creep
+   Call: (11) 5>2 ? creep
+   Exit: (11) 5>2 ? creep
+   Call: (11) _23446 is 5+ -1 ? creep
+   Exit: (11) 4 is 5+ -1 ? creep
+   Call: (11) _24962 is 5+ -2 ? creep
+   Exit: (11) 3 is 5+ -2 ? creep
+   Call: (11) fibonacci(4, _26472) ? creep
+   Call: (12) 4>2 ? creep
+   Exit: (12) 4>2 ? creep
+   Call: (12) _28742 is 4+ -1 ? creep
+   Exit: (12) 3 is 4+ -1 ? creep
+   Call: (12) _30258 is 4+ -2 ? creep
+   Exit: (12) 2 is 4+ -2 ? creep
+   Call: (12) fibonacci(3, _31768) ? creep
+   Call: (13) 3>2 ? creep
+   Exit: (13) 3>2 ? creep
+   Call: (13) _34038 is 3+ -1 ? creep
+   Exit: (13) 2 is 3+ -1 ? creep
+   Call: (13) _35554 is 3+ -2 ? creep
+   Exit: (13) 1 is 3+ -2 ? creep
+   Call: (13) fibonacci(2, _37064) ? creep
+   Exit: (13) fibonacci(2, 1) ? creep
+   Call: (13) fibonacci(1, _38574) ? creep
+   Exit: (13) fibonacci(1, 1) ? creep
+   Call: (13) _31768 is 1+1 ? creep
+   Exit: (13) 2 is 1+1 ? creep
+   Exit: (12) fibonacci(3, 2) ? creep
+   Call: (12) fibonacci(2, _42352) ? creep
+   Exit: (12) fibonacci(2, 1) ? creep
+   Call: (12) _26472 is 2+1 ? creep
+   Exit: (12) 3 is 2+1 ? creep
+   Exit: (11) fibonacci(4, 3) ? creep
+   Call: (11) fibonacci(3, _46130) ? creep
+   Call: (12) 3>2 ? creep
+   Exit: (12) 3>2 ? creep
+   Call: (12) _48400 is 3+ -1 ? creep
+   Exit: (12) 2 is 3+ -1 ? creep
+   Call: (12) _49916 is 3+ -2 ? creep
+   Exit: (12) 1 is 3+ -2 ? creep
+   Call: (12) fibonacci(2, _51426) ? creep
+   Exit: (12) fibonacci(2, 1) ? creep
+   Call: (12) fibonacci(1, _52936) ? creep
+   Exit: (12) fibonacci(1, 1) ? creep
+   Call: (12) _46130 is 1+1 ? creep
+   Exit: (12) 2 is 1+1 ? creep
+   Exit: (11) fibonacci(3, 2) ? creep
+   Call: (11) _20740 is 3+2 ? creep
+   Exit: (11) 5 is 3+2 ? creep
+   Exit: (10) fibonacci(5, 5) ? creep
+X = 5 ;
+   Redo: (12) fibonacci(1, _52936) ? creep
+   Call: (13) 1>2 ? creep
+   Fail: (13) 1>2 ? creep
+   Fail: (12) fibonacci(1, _52936) ? creep
+   Redo: (12) fibonacci(2, _51426) ? creep
+   Call: (13) 2>2 ? creep
+   Fail: (13) 2>2 ? creep
+   Fail: (12) fibonacci(2, _51426) ? creep
+   Fail: (11) fibonacci(3, _46130) ? creep
+   Redo: (12) fibonacci(2, _42352) ? creep
+   Call: (13) 2>2 ? creep
+   Fail: (13) 2>2 ? creep
+   Fail: (12) fibonacci(2, _42352) ? creep
+   Redo: (13) fibonacci(1, _38574) ? creep
+   Call: (14) 1>2 ? creep
+   Fail: (14) 1>2 ? creep
+   Fail: (13) fibonacci(1, _38574) ? creep
+   Redo: (13) fibonacci(2, _37064) ? creep
+   Call: (14) 2>2 ? creep
+   Fail: (14) 2>2 ? creep
+   Fail: (13) fibonacci(2, _37064) ? creep
+   Fail: (12) fibonacci(3, _31768) ? creep
+   Fail: (11) fibonacci(4, _26472) ? creep
+   Fail: (10) fibonacci(5, _20740) ? creep
+false.
