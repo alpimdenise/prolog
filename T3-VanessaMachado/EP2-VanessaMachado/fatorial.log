@@ -1,0 +1,19 @@
+1 ?- 
+% c:/users/vanes/documents/prolog/fatorial compiled 0,00 sec, 3 clauses
+1 ?- fatorial(2,FAT).
+FAT = 2 .
+
+2 ?- fatorial(4,FAT).
+FAT = 24 .
+
+3 ?- fatorial(8, FAT).
+FAT = 40320 .
+
+4 ?- fatorial(12, FAT).
+FAT = 479001600 .
+
+5 ?- fatorial(16, FAT).
+FAT = 20922789888000 .
+
+6 ?- fatorial(20, FAT).
+FAT = 2432902008176640000 .
