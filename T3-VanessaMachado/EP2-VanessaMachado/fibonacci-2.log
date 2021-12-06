@@ -1,0 +1,156 @@
+1 ?- 
+% c:/users/vanes/documents/prolog/fibonacci compiled 0,00 sec, 5 clauses
+1 ?- trace.
+true.
+
+[trace] 1 ?- fibonacci(1, FIB).
+   Call: (6) fibonacci(1, _G1387) ? creep
+   Exit: (6) fibonacci(1, 1) ? creep
+FIB = 1 ;
+   Redo: (6) fibonacci(1, _G1387) ? creep
+   Call: (7) 1>2 ? creep
+   Fail: (7) 1>2 ? creep
+   Fail: (6) fibonacci(1, _G1387) ? creep
+false.
+
+[trace] 2 ?- fibonacci(3, FIB).
+   Call: (6) fibonacci(3, _G1387) ? creep
+   Call: (7) 3>2 ? creep
+   Exit: (7) 3>2 ? creep
+   Call: (7) _G1462 is 3+ -1 ? creep
+   Exit: (7) 2 is 3+ -1 ? creep
+   Call: (7) _G1465 is 3+ -2 ? creep
+   Exit: (7) 1 is 3+ -2 ? creep
+   Call: (7) fibonacci(2, _G1466) ? creep
+   Exit: (7) fibonacci(2, 1) ? creep
+   Call: (7) fibonacci(1, _G1466) ? creep
+   Exit: (7) fibonacci(1, 1) ? creep
+   Call: (7) _G1387 is 1+1 ? creep
+   Exit: (7) 2 is 1+1 ? creep
+   Exit: (6) fibonacci(3, 2) ? creep
+FIB = 2 ;
+   Redo: (7) fibonacci(1, _G1466) ? creep
+   Call: (8) 1>2 ? creep
+   Fail: (8) 1>2 ? creep
+   Fail: (7) fibonacci(1, _G1466) ? creep
+   Redo: (7) fibonacci(2, _G1466) ? creep
+   Call: (8) 2>2 ? creep
+   Fail: (8) 2>2 ? creep
+   Fail: (7) fibonacci(2, _G1466) ? creep
+   Fail: (6) fibonacci(3, _G1387) ? creep
+false.
+
+[trace] 3 ?- fibonacci(0, FIB).
+   Call: (6) fibonacci(0, _G1387) ? creep
+   Exit: (6) fibonacci(0, 0) ? creep
+FIB = 0 ;
+   Redo: (6) fibonacci(0, _G1387) ? creep
+   Call: (7) 0>2 ? creep
+   Fail: (7) 0>2 ? creep
+   Fail: (6) fibonacci(0, _G1387) ? creep
+false.
+
+[trace] 4 ?- fibonacci(4, FIB).
+   Call: (6) fibonacci(4, _G1387) ? creep
+   Call: (7) 4>2 ? creep
+   Exit: (7) 4>2 ? creep
+   Call: (7) _G1462 is 4+ -1 ? creep
+   Exit: (7) 3 is 4+ -1 ? creep
+   Call: (7) _G1465 is 4+ -2 ? creep
+   Exit: (7) 2 is 4+ -2 ? creep
+   Call: (7) fibonacci(3, _G1466) ? creep
+   Call: (8) 3>2 ? creep
+   Exit: (8) 3>2 ? creep
+   Call: (8) _G1468 is 3+ -1 ? creep
+   Exit: (8) 2 is 3+ -1 ? creep
+   Call: (8) _G1471 is 3+ -2 ? creep
+   Exit: (8) 1 is 3+ -2 ? creep
+   Call: (8) fibonacci(2, _G1472) ? creep
+   Exit: (8) fibonacci(2, 1) ? creep
+   Call: (8) fibonacci(1, _G1472) ? creep
+   Exit: (8) fibonacci(1, 1) ? creep
+   Call: (8) _G1474 is 1+1 ? creep
+   Exit: (8) 2 is 1+1 ? creep
+   Exit: (7) fibonacci(3, 2) ? creep
+   Call: (7) fibonacci(2, _G1475) ? creep
+   Exit: (7) fibonacci(2, 1) ? creep
+   Call: (7) _G1387 is 2+1 ? creep
+   Exit: (7) 3 is 2+1 ? creep
+   Exit: (6) fibonacci(4, 3) ? creep
+FIB = 3 ;
+   Redo: (7) fibonacci(2, _G1475) ? creep
+   Call: (8) 2>2 ? creep
+   Fail: (8) 2>2 ? creep
+   Fail: (7) fibonacci(2, _G1475) ? creep
+   Redo: (8) fibonacci(1, _G1472) ? creep
+   Call: (9) 1>2 ? creep
+   Fail: (9) 1>2 ? creep
+   Fail: (8) fibonacci(1, _G1472) ? creep
+   Redo: (8) fibonacci(2, _G1472) ? creep
+   Call: (9) 2>2 ? creep
+   Fail: (9) 2>2 ? creep
+   Fail: (8) fibonacci(2, _G1472) ? creep
+   Fail: (7) fibonacci(3, _G1466) ? creep
+   Fail: (6) fibonacci(4, _G1387) ? creep
+false.
+
+
+% c:/users/vanes/documents/prolog/fibonacci-2 compiled 0,02 sec, 62 clauses
+[trace] 5 ?- trace.
+true.
+
+[trace] 5 ?- fibonacci(1, FIB).
+   Call: (6) fibonacci(1, _G1387) ? creep
+   Exit: (6) fibonacci(1, 1) ? creep
+FIB = 1.
+
+[trace] 6 ?- fibonacci(3, FIB).
+   Call: (6) fibonacci(3, _G1387) ? creep
+   Call: (7) 3>2 ? creep
+   Exit: (7) 3>2 ? creep
+   Call: (7) _G1462 is 3+ -1 ? creep
+   Exit: (7) 2 is 3+ -1 ? creep
+   Call: (7) _G1465 is 3+ -2 ? creep
+   Exit: (7) 1 is 3+ -2 ? creep
+   Call: (7) fibonacci(2, _G1466) ? creep
+   Exit: (7) fibonacci(2, 1) ? creep
+   Call: (7) fibonacci(1, _G1466) ? creep
+   Exit: (7) fibonacci(1, 1) ? creep
+   Call: (7) _G1387 is 1+1 ? creep
+   Exit: (7) 2 is 1+1 ? creep
+   Exit: (6) fibonacci(3, 2) ? creep
+FIB = 2.
+
+[trace] 7 ?- fibonacci(0, FIB).
+   Call: (6) fibonacci(0, _G1387) ? creep
+   Exit: (6) fibonacci(0, 0) ? creep
+FIB = 0.
+
+[trace] 8 ?- fibonacci(4, FIB).
+   Call: (6) fibonacci(4, _G1387) ? creep
+   Call: (7) 4>2 ? creep
+   Exit: (7) 4>2 ? creep
+   Call: (7) _G1462 is 4+ -1 ? creep
+   Exit: (7) 3 is 4+ -1 ? creep
+   Call: (7) _G1465 is 4+ -2 ? creep
+   Exit: (7) 2 is 4+ -2 ? creep
+   Call: (7) fibonacci(3, _G1466) ? creep
+   Call: (8) 3>2 ? creep
+   Exit: (8) 3>2 ? creep
+   Call: (8) _G1468 is 3+ -1 ? creep
+   Exit: (8) 2 is 3+ -1 ? creep
+   Call: (8) _G1471 is 3+ -2 ? creep
+   Exit: (8) 1 is 3+ -2 ? creep
+   Call: (8) fibonacci(2, _G1472) ? creep
+   Exit: (8) fibonacci(2, 1) ? creep
+   Call: (8) fibonacci(1, _G1472) ? creep
+   Exit: (8) fibonacci(1, 1) ? creep
+   Call: (8) _G1474 is 1+1 ? creep
+   Exit: (8) 2 is 1+1 ? creep
+   Exit: (7) fibonacci(3, 2) ? creep
+   Call: (7) fibonacci(2, _G1475) ? creep
+   Exit: (7) fibonacci(2, 1) ? creep
+   Call: (7) _G1387 is 2+1 ? creep
+   Exit: (7) 3 is 2+1 ? creep
+   Exit: (6) fibonacci(4, 3) ? creep
+FIB = 3.
