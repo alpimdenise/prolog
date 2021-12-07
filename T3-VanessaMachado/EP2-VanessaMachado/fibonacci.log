@@ -1,0 +1,22 @@
+1 ?- 
+% c:/users/vanes/documents/prolog/fibonacci compiled 0,00 sec, 5 clauses
+1 ?- fibonacci(3, FIB).
+FIB = 2 .
+
+2 ?- fibonacci(4, FIB).
+FIB = 3 .
+
+3 ?- fibonacci(6, FIB).
+FIB = 8 .
+
+4 ?- fibonacci(8, FIB).
+FIB = 21 .
+
+5 ?- fibonacci(10, FIB).
+FIB = 55 .
+
+6 ?- fibonacci(15, FIB).
+FIB = 610 .
+
+7 ?- fibonacci(20, FIB).
+FIB = 6765 .

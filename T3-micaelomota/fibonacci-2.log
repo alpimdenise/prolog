@@ -1,0 +1,28 @@
+fib(4, X)
+
+Stack limit (0.2Gb) exceeded
+  Stack sizes: local: 0.2Gb, global: 57.2Mb, trail: 1Kb
+  Stack depth: 1,874,556, last-call: 0%, Choice points: 12
+  In:
+    [1,874,556] fib(<compound (-)/2>, _1716)
+    [1,874,555] fib(<compound (-)/2>, _1748)
+    [1,874,554] fib(<compound (-)/2>, _1780)
+    [1,874,553] fib(<compound (-)/2>, _1812)
+    [1,874,552] fib(<compound (-)/2>, _1844)
+
+Use the --stack_limit=size[KMG] command line option or
+?- set_prolog_flag(stack_limit, 2_147_483_648). to double the limit.
+
+=========================
+
+fib(1, X)
+X = 1
+
+fib(5, X)
+X = 5
+
+fib(3, X)
+X = 2
+
+fib(8, X)
+X = 21
